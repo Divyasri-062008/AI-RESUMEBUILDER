@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+ AI-Powered ATS-Friendly Resume Builder for Students
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+This is a comprehensive, AI-powered web application designed to help students create professional, Applicant Tracking System (ATS)-friendly resumes with ease. The platform offers an intuitive interface, AI-guided content suggestions, and a unique **Resume Score Checker** feature to optimize resumes against specific job descriptions, significantly improving a student's chances of passing initial screening processes.
 
-In the project directory, you can run:
+## Key Features
 
-### `npm start`
+* **User Authentication & Management:** Secure login and signup functionality using Firebase Email/Password authentication, allowing individual users to manage their resumes privately.
+* **Intuitive Resume Editor:**
+    * **Drag-and-Drop Section Reordering:** Customize the layout of sections like Education, Experience, Projects, Skills, etc.
+    * **Dynamic Content Fields:** Easily add, edit, and remove entries within each resume section (e.g., multiple bullet points for experience, multiple skills).
+    * **Live Preview:** See real-time updates of your resume in an ATS-friendly format as you type.
+* **AI-Guided Suggestions:**
+    * Leverages the **Gemini API** to provide intelligent suggestions for crafting impactful summaries, refining bullet points with action verbs and quantifiable achievements, and identifying relevant skills.
+* **ATS-Friendly Templates:** Focuses on clean, classic, and simple layouts (single-column, left-aligned headings, clear fonts, black & white) to ensure maximum compatibility with Applicant Tracking Systems.
+* **Resume Score Checker:**
+    * **Targeted Analysis:** Compares your resume's content (skills, experience, keywords) directly against a pasted job description.
+    * **Match Score & Feedback:** Calculates a relevance score and provides actionable insights, highlighting missing hard/soft skills and keywords.
+    * **AI-Integrated Suggestions:** Offers AI-powered recommendations to rewrite sections or add missing elements for better job alignment.
+    * **Section-Level Feedback:** Provides specific advice on formatting, ATS compatibility, and structural improvements.
+* **Download & Export:** Allows users to download their generated resumes (simulated PDF export for demonstration).
+* **Responsive Design:** Optimized for seamless use across desktop and mobile browsers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technical Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Frontend:**
+    * **React.js:** For building a dynamic and component-based user interface.
+    * **Tailwind CSS:** A utility-first CSS framework for rapid and responsive UI development.
+    * **Lucide React:** For crisp, customizable SVG icons.
+* **Backend (Implicit/Managed):**
+    * **Firebase Authentication:** For secure user signup, login, and session management.
+    * **Firebase Firestore:** A NoSQL cloud database used for storing user data and resume content in a structured, real-time manner. Data is secured with Firestore Security Rules, ensuring users can only access their own information.
+* **AI Integration:**
+    * **Gemini API (gemini-2.0-flash):** Utilized for generating content suggestions (summaries, bullet points, skills) and performing resume-to-job description matching and analysis.
 
-### `npm test`
+## Project Goals
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Provide a simple, fast, and intuitive experience for students.
+* Generate resumes highly optimized for ATS parsing.
+* Ensure data privacy and provide export options.
+* Built with cloud deployment readiness in mind.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
